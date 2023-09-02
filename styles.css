@@ -1,0 +1,505 @@
+/**
+ * @Author: Your name
+ * @Date:   2023-08-11 19:09:46
+ * @Last Modified by:   Your name
+ * @Last Modified time: 2023-09-02 17:50:43
+ */
+ :root {
+    --clr-main: #4b33a8;
+    --clr-main-light: #785ce9;
+    --clr-white: #ececec;
+    --clr-gray: #e2e2e2;
+    --clr-red: #961818;
+}
+ /* Globales */
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: #333;
+background-color: cornflowerblue;
+  }
+
+  .container-item a:hover {
+    background-color: #e2e2e2;
+    
+    }
+
+container-img{
+    width: 100vw;
+    height: 100vw;
+}
+
+
+div.container-img h3{
+    color: #000;
+    font-size: 100px;
+    font-weight: 200px;
+    margin-top: auto;
+    text-align: center;
+    }
+    
+.color-select{
+    width: 10vw;
+    height: 10vw;
+    background-color: aquamarine; 
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 30px;
+}
+
+.color-select div{
+    width: 40px;
+    height: 40px;
+    border-radius:  50%;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.color-select #red{
+    background: red;
+}
+
+.color-select #blue{
+    background: blue;
+}
+
+.color-select #green{
+    background: greenyellow;
+}
+
+/* modifico icon size */
+.container-icon a {
+    font-size: 3rem;
+    color: #8408ff;
+}
+
+.container-icon a:hover {
+    cursor: pointer;
+}
+			
+img{
+    max-width: 100%;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.container-icon {
+    position: relative;
+}
+
+.container-icon {
+    position: relative;
+}
+
+
+.circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(127, 255, 212, 0.598);
+    
+}
+
+
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #8408ff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px; 
+    margin-bottom: 20px;
+}
+
+ .cart-shopping{
+    margin-left: 15px; 
+    margin-top: 20px;
+}
+
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+
+
+/* Main */
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+#container-items{
+    background-color: rgb(191, 230, 230);
+    border-radius: 10px;
+    margin-top: 20px;  
+}
+
+.item{
+  background-color: #785ce9;
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-color: 20px yellow;
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+    
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-product h2{
+    color: ghostwhite;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 600;
+    color: ghostwhite;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.Boton{
+    background-color:blueviolet;
+    color: #f00dd9;
+    font-size: 40px;
+    display: none;
+    padding: 855px 800px;
+    cursor: pointer;
+    transition-duration: 5s;
+}
+
+
+.btn-add-cart{
+    border-radius: 10px;
+}
+header  h1 {
+    background-color: gold;
+      border-radius: 10px;
+      box-shadow: 0 5px 5px rgba(0, 255, 255, 0.409);
+}
+
+.sale h2{
+    background-color: orange;
+      border-radius: 10px;
+      box-shadow: 0 10px 10px rgba(0, 255, 255, 0.422);
+    
+  }
+/* 
+
+
+
+
+/** CARRITO **/
+
+.contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.carrito-vacio,
+.carrito-comprado {
+    color: var(--clr-main);
+}
+
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-gray);
+    color: var(--clr-main);
+    padding: .5rem;
+    padding-right: 1.5rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto-imagen {
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto small {
+    font-size: .75rem;
+}
+
+.carrito-producto-eliminar {
+    border: 0;
+    background-color: transparent;
+    color: var(--clr-red);
+    cursor: pointer;
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito-acciones-vaciar {
+    border: 0;
+    background-color: var(--clr-gray);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--clr-main);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carrito-acciones-derecha {
+    display: flex;
+}
+
+.carrito-acciones-total {
+    display: flex;
+    background-color: var(--clr-gray);
+    padding: 1rem;
+    color: var(--clr-main);
+    text-transform: uppercase;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    gap: 1rem;
+}
+
+.carrito-acciones-comprar {
+    border: 0;
+    background-color: var(--clr-main);
+    padding: 1rem;
+    color: var(--clr-white);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+
+
+
+
+/* BUSCADOR DE CLIMA */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.clima-contenido {
+    box-shadow: rgba(47, 47, 87, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px 20px 50px;
+    margin: 10% auto 0;
+    background-color: #546785;
+    border-radius: 9px;
+    margin-bottom: 120px;
+}
+.clima-contenido h1{
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+.clima-contenido p{
+    color: #cfcfd9;
+}
+.result{
+    margin-bottom: 8%;
+}
+.result p{
+    margin: 5px 0 5px;
+}
+.result h2{
+    font-size: 70px;
+    line-height: 70px;
+    margin: -10px 0 10px;
+    color: #fff;
+}
+.result h5{
+    font-size: 21px;
+    margin: 2px;
+    color: #fff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input[type="text"], form input[type="submit"], form select{
+    width: 100%;
+    margin: 0px 0 25px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+form input[type="submit"]{
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #14d4a5;
+    border: 1px solid #14d4a5;
+    color: #fff;
+    font-weight: 600;
+    transition: width 1s;
+}
+form input[type="submit"]:hover{
+    width: 50%;
+}
+.alert-message {
+    margin: 24px 0 0;
+    color: red!important;
+}
